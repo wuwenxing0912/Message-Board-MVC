@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="formAndMessageList">
+        <form id="myForm" class="basic-grey">
+            <h1>留言板</h1>
+            <label>
+            <span>姓 名 :</span>
+            <input id="name" type="text" name="name"/>
+            </label>
+
+            <label>
+            <span>邮 箱 :</span>
+            <input id="email" type="text" name="email"/>
+            </label>
+
+            <label>
+            <span>留 言 :</span>
+            <textarea id="message" name="message"></textarea>
+            </label>
+
+            <label>
+            <span>&nbsp;</span>
+            <input type="submit" class="button" value="提交"/>
+            </label>
+        </form>
+        <ol id="messageList">
+        </ol>
+    </div>
+    <script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.7.2/dist/av-min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
